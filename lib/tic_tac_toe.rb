@@ -32,7 +32,7 @@ class TicTacToe
   end
   
   def position_taken?(index)
-    @board.find_index{|i| i != " "} 
+    @board.index{|i| i != " "} 
   end
   
   def valid_move?
