@@ -31,7 +31,7 @@ class TicTacToe
     @board[index] = player_token
   end
   
-  def position_taken?(user_input)
+  def position_taken?(index)
     @board.find_index{|i| i != " "} 
   end
   
