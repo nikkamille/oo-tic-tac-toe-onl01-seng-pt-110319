@@ -37,7 +37,7 @@ class TicTacToe
   
   def valid_move?(index)
     # @board[index] == " "
-    index.between?()
+    index.between?(0, 8)
   end
   
   def turn 
