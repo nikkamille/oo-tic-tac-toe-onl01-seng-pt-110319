@@ -60,7 +60,7 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.find do |
+    WIN_COMBINATIONS.find do |win|
   end
   
   def full?
