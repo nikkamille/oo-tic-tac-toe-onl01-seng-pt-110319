@@ -78,7 +78,9 @@ class TicTacToe
   end
   
   def winner
-  
+    if winning_combo = won?
+      @winner = position(winning_combo.first)
+    end
   end
   
 end
