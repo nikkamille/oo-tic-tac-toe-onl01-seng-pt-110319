@@ -35,16 +35,16 @@ class TicTacToe
     @board[index] == "X" || @board[index] == "O" 
   end
   
-  def valid_move?(input)
+  def valid_move?(index)
     # @board[index] == " " - passed the test but not sure if this is really the right way.
-    input.between?(0, 9) && !position_taken?(index)
+    index.between?(0, 9) && !position_taken?(index)
   end
   
   def turn
     puts "Please enter 1-9:"
-    input = input_to_index(gets.chomp)
+    index = input_to_index(gets.chomp)
     
-    if valid_move?(input)
+    if valid_move?(index)
       move(index, player_token = "X")
       display_board
     else
