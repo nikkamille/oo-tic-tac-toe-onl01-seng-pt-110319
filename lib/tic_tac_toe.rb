@@ -60,7 +60,7 @@ class TicTacToe
   end
   
   def won?
-    @board == WIN_COMBINATIONS
+    WIN_COMBINATIONS.find do |
   end
   
   def full?
